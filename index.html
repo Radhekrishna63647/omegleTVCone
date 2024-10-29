@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omegle Clone - Welcome</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Welcome Section -->
+    <div class="welcome-container">
+        <h1>Welcome to Omegle Clone</h1>
+        <p>Connect with random people around the world with text and video chat.</p>
+        <button onclick="facebookLogin()">Login with Facebook</button>
+    </div>
+
+    <!-- Chat Section (Will be shown after login) -->
+    <div class="chat-container hidden">
+        <h2>Welcome, <span id="username">User</span>!</h2>
+        <div class="video-container">
+            <video id="localVideo" autoplay muted></video>
+            <video id="remoteVideo" autoplay></video>
+        </div>
+        <div class="message-container">
+            <div id="chat-box"></div>
+            <input type="text" id="message" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+            <button onclick="connectUser()">Connect</button>
+            <button onclick="disconnectUser()">Disconnect</button>
+        </div>
+    </div>
+
+</body>
+</html>
